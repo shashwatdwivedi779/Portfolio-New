@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shashwat Dwivedi | Full-Stack Developer</title>
+  <meta name="description" content="Shashwat Dwivedi - Dedicated Full-Stack Developer specializing in scalable web applications, secure authentication, real-time communication, and RESTful APIs." />
+  <meta name="keywords" content="Shashwat Dwivedi, Full-Stack Developer, Node.js, React, MongoDB, AWS, Web Developer Portfolio" />
+  <meta property="og:title" content="Shashwat Dwivedi | Full-Stack Developer" />
+  <meta property="og:description" content="Dedicated Full-Stack Developer building scalable web applications." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=Fira+Code:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== LOADER ===== -->
+  <div id="loader" class="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">
+        <span class="loader-letter">S</span>
+        <span class="loader-letter">D</span>
+      </div>
+      <div class="loader-bar-wrap">
+        <div class="loader-bar"></div>
+      </div>
+      <p class="loader-text">Initializing Portfolio...</p>
+    </div>
+  </div>
+
+  <!-- ===== CURSOR ===== -->
+  <div id="cursor-dot" class="cursor-dot"></div>
+  <div id="cursor-outline" class="cursor-outline"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name">SD</span>
+        <span class="logo-bracket">/&gt;</span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero" class="nav-link active" data-section="hero">Home</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#education" class="nav-link" data-section="education">Education</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+        <li><a href="#resume" class="nav-link" data-section="resume">Resume</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="mailto:shashwatdigec77@gmail.com" class="nav-cta" id="hire-btn">Hire Me</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="nav-progress"></div>
+  </nav>
+
+  <!-- ===== MOBILE MENU ===== -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="#hero" class="mob-link">Home</a></li>
+      <li><a href="#about" class="mob-link">About</a></li>
+      <li><a href="#skills" class="mob-link">Skills</a></li>
+      <li><a href="#projects" class="mob-link">Projects</a></li>
+      <li><a href="#education" class="mob-link">Education</a></li>
+      <li><a href="#contact" class="mob-link">Contact</a></li>
+      <li><a href="#resume" class="mob-link">Resume</a></li>
+    </ul>
+  </div>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="hero" class="hero">
+    <!-- 3D Floating Shapes -->
+    <div class="hero-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="shape shape-4"></div>
+      <div class="shape shape-5"></div>
+      <div class="shape shape-6"></div>
+    </div>
+
+    <!-- Particle Canvas -->
+    <canvas id="hero-canvas" class="hero-canvas"></canvas>
+
+    <!-- Grid Lines -->
+    <div class="hero-grid"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge reveal-up">
+        <span class="badge-dot"></span>
+        <span>Available for Work</span>
+      </div>
+      <h1 class="hero-title reveal-up">
+        <span class="hero-greeting">Hello, I'm</span>
+        <span class="hero-name">Shashwat<br/><em>Dwivedi</em></span>
+      </h1>
+      <div class="hero-roles reveal-up">
+        <span class="role-prefix">I build</span>
+        <div class="roles-slider">
+          <span class="role-item active">Full-Stack Apps</span>
+          <span class="role-item">REST APIs</span>
+          <span class="role-item">Cloud Solutions</span>
+          <span class="role-item">Real-time Systems</span>
+        </div>
+      </div>
+      <p class="hero-desc reveal-up">
+        Dedicated Full-Stack Developer crafting scalable web applications with secure authentication, 
+        real-time communication, and cloud-deployed REST APIs.
+      </p>
+      <div class="hero-btns reveal-up">
+        <a href="#projects" class="btn-primary" id="view-work-btn">
+          <span>View My Work</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="btn-secondary" id="contact-btn">
+          <span>Let's Connect</span>
+        </a>
+      </div>
+      <div class="hero-socials reveal-up">
+        <a href="https://github.com/shashwatdwivedi779" target="_blank" rel="noopener" class="social-link" id="github-link" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/shashwat-dwivedi-5a3417303" target="_blank" rel="noopener" class="social-link" id="linkedin-link" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="mailto:shashwatdigec77@gmail.com" class="social-link" id="email-link" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- 3D Laptop Graphic -->
+    <div class="hero-3d-wrap">
+      <div class="laptop-scene">
+        <div class="laptop-model">
+          <div class="laptop-screen">
+            <div class="screen-content">
+              <div class="code-line"><span class="kw">const</span> <span class="var">developer</span> = {</div>
+              <div class="code-line">&nbsp;&nbsp;<span class="key">name</span>: <span class="str">"Shashwat"</span>,</div>
+              <div class="code-line">&nbsp;&nbsp;<span class="key">role</span>: <span class="str">"Full-Stack Dev"</span>,</div>
+              <div class="code-line">&nbsp;&nbsp;<span class="key">passion</span>: <span class="str">"Building"</span>,</div>
+              <div class="code-line">&nbsp;&nbsp;<span class="key">coffee</span>: <span class="num">Infinity</span></div>
+              <div class="code-line">};</div>
+              <div class="code-line blink-line"><span class="cmt">// Let's build something</span><span class="cursor-code">|</span></div>
+            </div>
+          </div>
+          <div class="laptop-hinge"></div>
+          <div class="laptop-base">
+            <div class="laptop-keyboard"></div>
+            <div class="laptop-touchpad"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-dot"></div>
+      </div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag scroll-reveal">About Me</span>
+        <h2 class="section-title scroll-reveal">The Mind Behind the Code</h2>
+        <p class="section-subtitle scroll-reveal">Turning complex problems into elegant, scalable digital experiences</p>
+      </div>
+
+      <div class="about-grid">
+        <!-- 3D Avatar / Profile Graphic -->
+        <div class="about-visual scroll-reveal-left">
+          <div class="profile-scene">
+            <div class="profile-card-3d">
+              <div class="profile-front">
+                <div class="profile-avatar">
+                  <div class="avatar-ring ring-1"></div>
+                  <div class="avatar-ring ring-2"></div>
+                  <div class="avatar-ring ring-3"></div>
+                  <div class="avatar-core">
+                    <span class="avatar-initials">SD</span>
+                  </div>
+                  <div class="orbit orbit-1">
+                    <div class="orbit-dot html-dot" title="HTML5"></div>
+                  </div>
+                  <div class="orbit orbit-2">
+                    <div class="orbit-dot node-dot" title="Node.js"></div>
+                  </div>
+                  <div class="orbit orbit-3">
+                    <div class="orbit-dot mongo-dot" title="MongoDB"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="floating-cards-around">
+              <div class="mini-card card-aws">☁️ AWS</div>
+              <div class="mini-card card-node">⚡ Node.js</div>
+              <div class="mini-card card-db">🗄️ MongoDB</div>
+              <div class="mini-card card-socket">🔴 Socket.IO</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- About Content -->
+        <div class="about-content scroll-reveal-right">
+          <h3 class="about-heading">I craft digital experiences that <em>matter</em></h3>
+          <p class="about-text">
+            I'm <strong>Shashwat Dwivedi</strong>, a Full-Stack Developer from India with a passion for 
+            building production-grade applications from the ground up. My expertise spans both 
+            frontend elegance and backend robustness.
+          </p>
+          <p class="about-text">
+            I specialize in creating secure, real-time web applications with seamless user experiences. 
+            From designing RESTful APIs to deploying on AWS EC2 with Nginx — I own the full stack.
+          </p>
+
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <div class="highlight-icon">🚀</div>
+              <div>
+                <h4>Production Deployed</h4>
+                <p>2+ projects live on AWS EC2</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">⚡</div>
+              <div>
+                <h4>Real-time Systems</h4>
+                <p>Socket.IO & live messaging</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">🔐</div>
+              <div>
+                <h4>Secure by Design</h4>
+                <p>JWT, OTP, Role-based access</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">🧠</div>
+              <div>
+                <h4>DSA Enthusiast</h4>
+                <p>Strong algorithmic thinking</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-langs">
+            <span class="lang-badge">🌐 English</span>
+            <span class="lang-badge">🇮🇳 Hindi</span>
+          </div>
+
+          <a href="mailto:shashwatdigec77@gmail.com" class="btn-primary" id="about-contact-btn">
+            <span>Get In Touch</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Stats Row -->
+      <div class="stats-row">
+        <div class="stat-card scroll-reveal" data-delay="0">
+          <div class="stat-number" data-target="2">0</div>
+          <div class="stat-plus">+</div>
+          <div class="stat-label">Projects Deployed</div>
+        </div>
+        <div class="stat-card scroll-reveal" data-delay="100">
+          <div class="stat-number" data-target="6">0</div>
+          <div class="stat-plus">+</div>
+          <div class="stat-label">Technologies</div>
+        </div>
+        <div class="stat-card scroll-reveal" data-delay="200">
+          <div class="stat-number" data-target="2">0</div>
+          <div class="stat-plus">+</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-card scroll-reveal" data-delay="300">
+          <div class="stat-number" data-target="100">0</div>
+          <div class="stat-plus">%</div>
+          <div class="stat-label">Commitment</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LAPTOP OPENING SCROLL ANIMATION ===== -->
+  <section id="scroll-story" class="scroll-story">
+    <div class="scroll-story-sticky">
+      <div class="story-scene">
+        <div class="story-laptop" id="story-laptop">
+          <div class="story-screen" id="story-screen">
+            <div class="story-screen-content">
+              <div class="story-text" id="story-text">
+                <h2>Building the future,<br/>one commit at a time.</h2>
+                <p>From zero to production. Every line of code is a step forward.</p>
+              </div>
+            </div>
+          </div>
+          <div class="story-base">
+            <div class="story-keyboard"></div>
+          </div>
+        </div>
+        <div class="story-progress-wrap">
+          <div class="story-progress-bar" id="story-progress"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section id="skills" class="skills-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag scroll-reveal">Technical Skills</span>
+        <h2 class="section-title scroll-reveal">My Tech Arsenal</h2>
+        <p class="section-subtitle scroll-reveal">Technologies I wield to build powerful applications</p>
+      </div>
+
+      <!-- 3D Skill Cubes -->
+      <div class="skills-3d-grid">
+        <div class="skill-cube-wrap scroll-reveal" data-delay="0">
+          <div class="skill-cube" id="cube-html">
+            <div class="cube-face front">
+              <span class="skill-icon">📄</span>
+              <span>HTML5</span>
+            </div>
+            <div class="cube-face back">
+              <span class="skill-lvl">Expert</span>
+            </div>
+            <div class="cube-face left"></div>
+            <div class="cube-face right"></div>
+            <div class="cube-face top"></div>
+            <div class="cube-face bottom"></div>
+          </div>
+        </div>
+        <div class="skill-cube-wrap scroll-reveal" data-delay="80">
+          <div class="skill-cube" id="cube-css">
+            <div class="cube-face front">
+              <span class="skill-icon">🎨</span>
+              <span>CSS3</span>
+            </div>
+            <div class="cube-face back">
+              <span class="skill-lvl">Advanced</span>
+            </div>
+            <div class="cube-face left"></div>
+            <div class="cube-face right"></div>
+            <div class="cube-face top"></div>
+            <div class="cube-face bottom"></div>
+          </div>
+        </div>
+        <div class="skill-cube-wrap scroll-reveal" data-delay="160">
+          <div class="skill-cube" id="cube-js">
+            <div class="cube-face front">
+              <span class="skill-icon">⚡</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="cube-face back">
+              <span class="skill-lvl">Advanced</span>
+            </div>
+            <div class="cube-face left"></div>
+            <div class="cube-face right"></div>
+            <div class="cube-face top"></div>
+            <div class="cube-face bottom"></div>
+          </div>
+        </div>
+        <div class="skill-cube-wrap scroll-reveal" data-delay="240">
+          <div class="skill-cube" id="cube-node">
+            <div class="cube-face front">
+              <span class="skill-icon">🟢</span>
+              <span>Node.js</span>
+            </div>
+            <div class="cube-face back">
+              <span class="skill-lvl">Advanced</span>
+            </div>
+            <div class="cube-face left"></div>
+            <div class="cube-face right"></div>
+            <div class="cube-face top"></div>
+            <div class="cube-face bottom"></div>
+          </div>
+        </div>
+        <div class="skill-cube-wrap scroll-reveal" data-delay="320">
+          <div class="skill-cube" id="cube-express">
+            <div class="cube-face front">
+              <span class="skill-icon">🚂</span>
+              <span>Express</span>
+            </div>
+            <div class="cube-face back">
+              <span class="skill-lvl">Advanced</span>
+            </div>
+            <div class="cube-face left"></div>
+            <div class="cube-face right"></div>
+            <div class="cube-face top"></div>
+            <div class="cube-face bottom"></div>
+          </div>
+        </div>
+        <div class="skill-cube-wrap scroll-reveal" data-delay="400">
+          <div class="skill-cube" id="cube-mongo">
+            <div class="cube-face front">
+              <span class="skill-icon">🍃</span>
+              <span>MongoDB</span>
+            </div>
+            <div class="cube-face back">
+              <span class="skill-lvl">Proficient</span>
+            </div>
+            <div class="cube-face left"></div>
+            <div class="cube-face right"></div>
+            <div class="cube-face top"></div>
+            <div class="cube-face bottom"></div>
+          </div>
+        </div>
+        <div class="skill-cube-wrap scroll-reveal" data-delay="480">
+          <div class="skill-cube" id="cube-psql">
+            <div class="cube-face front">
+              <span class="skill-icon">🐘</span>
+              <span>PostgreSQL</span>
+            </div>
+            <div class="cube-face back">
+              <span class="skill-lvl">Proficient</span>
+            </div>
+            <div class="cube-face left"></div>
+            <div class="cube-face right"></div>
+            <div class="cube-face top"></div>
+            <div class="cube-face bottom"></div>
+          </div>
+        </div>
+        <div class="skill-cube-wrap scroll-reveal" data-delay="560">
+          <div class="skill-cube" id="cube-aws">
+            <div class="cube-face front">
+              <span class="skill-icon">☁️</span>
+              <span>AWS</span>
+            </div>
+            <div class="cube-face back">
+              <span class="skill-lvl">Proficient</span>
+            </div>
+            <div class="cube-face left"></div>
+            <div class="cube-face right"></div>
+            <div class="cube-face top"></div>
+            <div class="cube-face bottom"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skill Progress Bars -->
+      <div class="skill-bars-wrap">
+        <div class="skill-bar-item scroll-reveal">
+          <div class="skill-bar-header">
+            <span>HTML / CSS</span>
+            <span class="skill-pct">95%</span>
+          </div>
+          <div class="skill-bar-bg">
+            <div class="skill-bar-fill" data-width="95"></div>
+          </div>
+        </div>
+        <div class="skill-bar-item scroll-reveal">
+          <div class="skill-bar-header">
+            <span>JavaScript</span>
+            <span class="skill-pct">88%</span>
+          </div>
+          <div class="skill-bar-bg">
+            <div class="skill-bar-fill" data-width="88"></div>
+          </div>
+        </div>
+        <div class="skill-bar-item scroll-reveal">
+          <div class="skill-bar-header">
+            <span>Node.js / Express</span>
+            <span class="skill-pct">85%</span>
+          </div>
+          <div class="skill-bar-bg">
+            <div class="skill-bar-fill" data-width="85"></div>
+          </div>
+        </div>
+        <div class="skill-bar-item scroll-reveal">
+          <div class="skill-bar-header">
+            <span>MongoDB / PostgreSQL</span>
+            <span class="skill-pct">80%</span>
+          </div>
+          <div class="skill-bar-bg">
+            <div class="skill-bar-fill" data-width="80"></div>
+          </div>
+        </div>
+        <div class="skill-bar-item scroll-reveal">
+          <div class="skill-bar-header">
+            <span>AWS (EC2 & S3)</span>
+            <span class="skill-pct">75%</span>
+          </div>
+          <div class="skill-bar-bg">
+            <div class="skill-bar-fill" data-width="75"></div>
+          </div>
+        </div>
+        <div class="skill-bar-item scroll-reveal">
+          <div class="skill-bar-header">
+            <span>Data Structures & Algorithms</span>
+            <span class="skill-pct">82%</span>
+          </div>
+          <div class="skill-bar-bg">
+            <div class="skill-bar-fill" data-width="82"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Additional Tools -->
+      <div class="tools-grid scroll-reveal">
+        <h3>Tools & Technologies</h3>
+        <div class="tools-row">
+          <div class="tool-pill">Socket.IO</div>
+          <div class="tool-pill">JWT Auth</div>
+          <div class="tool-pill">Nginx</div>
+          <div class="tool-pill">PM2</div>
+          <div class="tool-pill">Multer</div>
+          <div class="tool-pill">REST APIs</div>
+          <div class="tool-pill">Git / GitHub</div>
+          <div class="tool-pill">EC2</div>
+          <div class="tool-pill">S3</div>
+          <div class="tool-pill">OTP Auth</div>
+          <div class="tool-pill">Role-Based Access</div>
+          <div class="tool-pill">Real-time Chat</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag scroll-reveal">My Work</span>
+        <h2 class="section-title scroll-reveal">Featured Projects</h2>
+        <p class="section-subtitle scroll-reveal">Production-ready applications built from conception to launch</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: AssignTrust -->
+        <div class="project-card scroll-reveal" id="project-assigntrust" data-delay="0">
+          <div class="project-card-inner">
+            <div class="project-glow"></div>
+            <div class="project-header">
+              <div class="project-number">01</div>
+              <div class="project-links">
+                <a href="https://assign-trust.igec-shash.in" target="_blank" rel="noopener" class="proj-link-btn" aria-label="Live Demo">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+                <a href="https://github.com/shashwatdwivedi779" target="_blank" rel="noopener" class="proj-link-btn" aria-label="GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-visual">
+              <div class="project-screen">
+                <div class="proj-screen-bar">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+                  <span class="proj-url">assign-trust.igec-shash.in</span>
+                </div>
+                <div class="proj-screen-body assigntrust-demo">
+                  <div class="demo-nav">AssignTrust</div>
+                  <div class="demo-hero">
+                    <div class="demo-h">Freelancing for Students</div>
+                    <div class="demo-p">Earn • Learn • Collaborate</div>
+                    <div class="demo-btn">Get Started</div>
+                  </div>
+                  <div class="demo-cards">
+                    <div class="demo-card">📚 Post Task</div>
+                    <div class="demo-card">💰 Earn Money</div>
+                    <div class="demo-card">💬 Chat Live</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-name">AssignTrust</h3>
+              <p class="project-tagline">Student Freelancing Platform</p>
+              <p class="project-desc">
+                A peer-to-peer freelancing marketplace where students can post assignments and earn money by completing others'. Features enterprise-grade security and real-time communication.
+              </p>
+              <div class="project-tech-row">
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Socket.IO</span>
+                <span class="tech-tag">JWT</span>
+                <span class="tech-tag">AWS EC2</span>
+                <span class="tech-tag">Nginx</span>
+              </div>
+              <div class="project-features">
+                <div class="feat">✅ JWT Authentication</div>
+                <div class="feat">✅ Email OTP Verification</div>
+                <div class="feat">✅ Role-Based Access Control</div>
+                <div class="feat">✅ Real-time Messaging</div>
+                <div class="feat">✅ AWS EC2 Deployment</div>
+              </div>
+              <a href="https://assign-trust.igec-shash.in" target="_blank" rel="noopener" class="proj-cta">
+                View Live Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: College Marketplace -->
+        <div class="project-card scroll-reveal" id="project-marketplace" data-delay="150">
+          <div class="project-card-inner">
+            <div class="project-glow"></div>
+            <div class="project-header">
+              <div class="project-number">02</div>
+              <div class="project-links">
+                <a href="https://college-shop.igec-shash.in" target="_blank" rel="noopener" class="proj-link-btn" aria-label="Live Demo">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+                <a href="https://github.com/shashwatdwivedi779" target="_blank" rel="noopener" class="proj-link-btn" aria-label="GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-visual">
+              <div class="project-screen">
+                <div class="proj-screen-bar">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+                  <span class="proj-url">college-shop.igec-shash.in</span>
+                </div>
+                <div class="proj-screen-body marketplace-demo">
+                  <div class="demo-nav">🛒 College Shop</div>
+                  <div class="demo-hero">
+                    <div class="demo-h">Campus Marketplace</div>
+                    <div class="demo-p">Buy • Sell • Chat Live</div>
+                    <div class="demo-btn">Explore</div>
+                  </div>
+                  <div class="demo-cards">
+                    <div class="demo-card">📱 Sell Items</div>
+                    <div class="demo-card">🔍 Find Deals</div>
+                    <div class="demo-card">💬 Chat Direct</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-name">College Marketplace</h3>
+              <p class="project-tagline">Campus Buy & Sell Platform</p>
+              <p class="project-desc">
+                A full-featured e-commerce platform exclusively for college students. Enables buying and selling of second-hand and new items with secure authentication and real-time buyer-seller communication.
+              </p>
+              <div class="project-tech-row">
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Socket.IO</span>
+                <span class="tech-tag">Multer</span>
+                <span class="tech-tag">AWS EC2</span>
+                <span class="tech-tag">PM2</span>
+              </div>
+              <div class="project-features">
+                <div class="feat">✅ JWT Authentication</div>
+                <div class="feat">✅ Multi-Image Uploads</div>
+                <div class="feat">✅ Product Management</div>
+                <div class="feat">✅ Real-time Buyer-Seller Chat</div>
+                <div class="feat">✅ AWS EC2 + Nginx Deployment</div>
+              </div>
+              <a href="https://college-shop.igec-shash.in" target="_blank" rel="noopener" class="proj-cta">
+                View Live Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION SECTION ===== -->
+  <section id="education" class="education-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag scroll-reveal">Background</span>
+        <h2 class="section-title scroll-reveal">Education</h2>
+        <p class="section-subtitle scroll-reveal">Building foundations for a technology-driven future</p>
+      </div>
+
+      <div class="edu-scene">
+        <!-- Floating particles around education -->
+        <div class="edu-particles">
+          <div class="edu-particle"></div>
+          <div class="edu-particle"></div>
+          <div class="edu-particle"></div>
+          <div class="edu-particle"></div>
+          <div class="edu-particle"></div>
+        </div>
+
+        <div class="edu-card-3d scroll-reveal">
+          <div class="edu-card-wrap">
+            <div class="edu-card-visual">
+              <div class="college-building">
+                <div class="building-roof">🎓</div>
+                <div class="building-name">IGEC</div>
+                <div class="building-windows">
+                  <div class="win"></div><div class="win"></div><div class="win"></div>
+                  <div class="win"></div><div class="win"></div><div class="win"></div>
+                </div>
+                <div class="building-door"></div>
+              </div>
+            </div>
+            <div class="edu-card-info">
+              <div class="edu-badge">🎓 Undergraduate</div>
+              <h3 class="edu-degree">Bachelor of Technology</h3>
+              <h4 class="edu-branch">Information Technology</h4>
+              <div class="edu-institution">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                Indira Gandhi Engineering College
+              </div>
+              <div class="edu-location">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Sagar, Madhya Pradesh
+              </div>
+              <div class="edu-duration">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                2025 – 2029
+              </div>
+              <div class="edu-subjects">
+                <span class="edu-subject">Data Structures</span>
+                <span class="edu-subject">Algorithms</span>
+                <span class="edu-subject">Web Dev</span>
+                <span class="edu-subject">Databases</span>
+                <span class="edu-subject">Cloud Computing</span>
+                <span class="edu-subject">OS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Achievement Timeline -->
+        <div class="timeline-wrap">
+          <h3 class="timeline-heading scroll-reveal">Journey Milestones</h3>
+          <div class="timeline">
+            <div class="tl-item scroll-reveal" data-delay="0">
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+                <span class="tl-year">2025</span>
+                <h4>Started B.Tech at IGEC</h4>
+                <p>Began Information Technology degree, diving deep into CS fundamentals and web development.</p>
+              </div>
+            </div>
+            <div class="tl-item scroll-reveal" data-delay="100">
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+                <span class="tl-year">2025</span>
+                <h4>Launched AssignTrust</h4>
+                <p>Built and deployed first production platform — a student freelancing marketplace on AWS EC2.</p>
+              </div>
+            </div>
+            <div class="tl-item scroll-reveal" data-delay="200">
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+                <span class="tl-year">2025</span>
+                <h4>College Marketplace Live</h4>
+                <p>Launched a full-featured campus buy/sell platform with real-time chat and multi-image uploads.</p>
+              </div>
+            </div>
+            <div class="tl-item scroll-reveal" data-delay="300">
+              <div class="tl-dot future"></div>
+              <div class="tl-content">
+                <span class="tl-year">2029</span>
+                <h4>B.Tech Graduation</h4>
+                <p>Continuing to build, learn, and grow as a full-stack developer ready to make an impact.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag scroll-reveal">Let's Talk</span>
+        <h2 class="section-title scroll-reveal">Get In Touch</h2>
+        <p class="section-subtitle scroll-reveal">Have a project in mind? Let's build something amazing together.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Info -->
+        <div class="contact-info scroll-reveal-left">
+          <h3>Let's create something <em>extraordinary</em></h3>
+          <p>I'm always excited to work on new projects, collaborate with great teams, or just have a tech conversation. Drop me a message!</p>
+
+          <div class="contact-items">
+            <a href="mailto:shashwatdigec77@gmail.com" class="contact-item" id="contact-email">
+              <div class="contact-item-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+              </div>
+              <div>
+                <span class="ci-label">Email</span>
+                <span class="ci-value">shashwatdigec77@gmail.com</span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/shashwat-dwivedi-5a3417303" target="_blank" rel="noopener" class="contact-item" id="contact-linkedin">
+              <div class="contact-item-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </div>
+              <div>
+                <span class="ci-label">LinkedIn</span>
+                <span class="ci-value">shashwat-dwivedi-5a3417303</span>
+              </div>
+            </a>
+            <a href="https://github.com/shashwatdwivedi779" target="_blank" rel="noopener" class="contact-item" id="contact-github">
+              <div class="contact-item-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </div>
+              <div>
+                <span class="ci-label">GitHub</span>
+                <span class="ci-value">shashwatdwivedi779</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="availability-card">
+            <div class="avail-dot"></div>
+            <div>
+              <strong>Open to Opportunities</strong>
+              <p>Internships, Freelance & Full-time Roles</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrap scroll-reveal-right">
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="contact-name">Your Name</label>
+              <div class="input-wrap">
+                <input type="text" id="contact-name" name="name" placeholder="John Doe" required />
+                <span class="input-focus-border"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contact-user-email">Your Email</label>
+              <div class="input-wrap">
+                <input type="email" id="contact-user-email" name="email" placeholder="john@example.com" required />
+                <span class="input-focus-border"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contact-subject">Subject</label>
+              <div class="input-wrap">
+                <input type="text" id="contact-subject" name="subject" placeholder="Project Collaboration" />
+                <span class="input-focus-border"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <div class="input-wrap">
+                <textarea id="contact-message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                <span class="input-focus-border"></span>
+              </div>
+            </div>
+            <button type="submit" class="btn-primary form-submit" id="form-submit-btn">
+              <span>Send Message</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+            <div class="form-success" id="form-success">
+              <span>🎉</span> Message sent! I'll get back to you soon.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== RESUME SECTION ===== -->
+  <section id="resume" class="resume-section">
+    <div class="resume-bg-shapes">
+      <div class="resume-shape rs-1"></div>
+      <div class="resume-shape rs-2"></div>
+      <div class="resume-shape rs-3"></div>
+    </div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag scroll-reveal">My Resume</span>
+        <h2 class="section-title scroll-reveal">Download or View Resume</h2>
+        <p class="section-subtitle scroll-reveal">A quick look at my skills, experience, and education — all in one place</p>
+      </div>
+
+      <div class="resume-card-wrap">
+        <!-- Resume Preview Panel -->
+        <div class="resume-preview scroll-reveal-left">
+          <div class="resume-preview-inner">
+            <div class="resume-doc-mock">
+              <div class="doc-header">
+                <div class="doc-avatar">
+                  <span>SD</span>
+                </div>
+                <div class="doc-header-text">
+                  <div class="doc-name-line"></div>
+                  <div class="doc-role-line"></div>
+                </div>
+              </div>
+              <div class="doc-divider"></div>
+              <div class="doc-section">
+                <div class="doc-section-title"></div>
+                <div class="doc-line"></div>
+                <div class="doc-line short"></div>
+                <div class="doc-line medium"></div>
+              </div>
+              <div class="doc-section">
+                <div class="doc-section-title"></div>
+                <div class="doc-line"></div>
+                <div class="doc-line medium"></div>
+                <div class="doc-line short"></div>
+              </div>
+              <div class="doc-section">
+                <div class="doc-section-title"></div>
+                <div class="doc-skill-chips">
+                  <div class="doc-chip"></div>
+                  <div class="doc-chip"></div>
+                  <div class="doc-chip"></div>
+                  <div class="doc-chip wide"></div>
+                  <div class="doc-chip"></div>
+                </div>
+              </div>
+              <div class="doc-stamp">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6H6zm7 1.5L18.5 9H13V3.5zM8 13h8v1H8v-1zm0 3h6v1H8v-1z"/></svg>
+                <span>PDF</span>
+              </div>
+            </div>
+            <div class="preview-glow"></div>
+          </div>
+        </div>
+
+        <!-- Resume CTA Panel -->
+        <div class="resume-cta scroll-reveal-right">
+          <div class="resume-info">
+            <div class="resume-info-icon">📄</div>
+            <div>
+              <h3 class="resume-info-title">Shashwat Dwivedi</h3>
+              <p class="resume-info-role">Full-Stack Developer</p>
+            </div>
+          </div>
+
+          <ul class="resume-highlights">
+            <li>
+              <span class="rh-dot"></span>
+              <span>Node.js · React · MongoDB · AWS</span>
+            </li>
+            <li>
+              <span class="rh-dot"></span>
+              <span>Real-time Systems & REST API Design</span>
+            </li>
+            <li>
+              <span class="rh-dot"></span>
+              <span>JWT Auth, Socket.IO, EC2 Deployments</span>
+            </li>
+            <li>
+              <span class="rh-dot"></span>
+              <span>2+ Live Projects · Open to Opportunities</span>
+            </li>
+          </ul>
+
+          <div class="resume-file-meta">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6H6zm7 1.5L18.5 9H13V3.5z"/></svg>
+            <span>Shashwat Dwivedi New Resume.pdf</span>
+            <span class="file-size">~276 KB</span>
+          </div>
+
+          <div class="resume-actions">
+            <a
+              href="Shashwat Dwivedi New Resume.pdf"
+              target="_blank"
+              rel="noopener"
+              class="resume-btn resume-btn-view"
+              id="view-resume-btn"
+            >
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              <span>View Resume</span>
+            </a>
+            <a
+              href="Shashwat Dwivedi New Resume.pdf"
+              download="Shashwat_Dwivedi_Resume.pdf"
+              class="resume-btn resume-btn-download"
+              id="download-resume-btn"
+            >
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <span>Download PDF</span>
+            </a>
+          </div>
+
+          <p class="resume-updated">✅ Last updated: September 2026</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="logo-bracket">&lt;</span>
+          <span class="logo-name">SD</span>
+          <span class="logo-bracket">/&gt;</span>
+        </div>
+        <p>Full-Stack Developer crafting scalable digital experiences from Madhya Pradesh, India.</p>
+        <div class="footer-socials">
+          <a href="https://github.com/shashwatdwivedi779" target="_blank" rel="noopener" aria-label="GitHub" class="footer-social">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/shashwat-dwivedi-5a3417303" target="_blank" rel="noopener" aria-label="LinkedIn" class="footer-social">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="mailto:shashwatdigec77@gmail.com" aria-label="Email" class="footer-social">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-nav">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#resume">Resume</a></li>
+        </ul>
+      </div>
+      <div class="footer-projects">
+        <h4>Projects</h4>
+        <ul>
+          <li><a href="https://assign-trust.igec-shash.in" target="_blank" rel="noopener">AssignTrust</a></li>
+          <li><a href="https://college-shop.igec-shash.in" target="_blank" rel="noopener">College Marketplace</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Shashwat Dwivedi. Built with 💚 and lots of ☕</p>
+      <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+      </button>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
